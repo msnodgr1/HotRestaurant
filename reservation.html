@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="jumbotron">
+			  <h1 class="display-3"><span class="glyphicon glyphicon-fire"></span>HOT Restaurant!</h1>
+			  <p class="lead">Hottest Restaurant in CLE.</p>
+			  <hr class="my-4">
+			  <p>Get Hot With Us Today!</p>
+			  <p class="lead">
+			    <a class="btn btn-primary btn-lg" href="#" role="button">View Tables</a>
+			    <a class="btn btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-home"></span></a>
+			  </p>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Make a Reserveration</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<label class="name">Name</label>
+  					<input type="text" class="form-control" placeholder="Username" aria-describedby="name">
+  					<br>
+  					<label class="phone">Phone</label>
+  					<input type="text" class="form-control" placeholder="Username" aria-describedby="phone">
+  					<br>
+  					<label class="email">Email</label>
+  					<input type="text" class="form-control" placeholder="Username" aria-describedby="email">
+  					<br>
+  					<label class="id">Unique ID</label>
+  					<input type="text" class="form-control" placeholder="Username" aria-describedby="id">
+  					<br>
+  					<a class="btn btn-primary btn-md" href="#" id="submit" role="button">Submit</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$("submit").on('click', function(){
+		event.preventDefault();
+		var newRes = {
+			name: $('#name').val().trim(),
+			phone: $('#phone').val().trim(),
+			email: $('email').val().trim(),
+			id: $('#id').val().trim() 
+		}
+
+	})
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
+</html>
